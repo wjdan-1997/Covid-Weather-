@@ -1,0 +1,235 @@
+.overview{
+    padding: 15px;
+    border: #989993 1px solid;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline; 
+    color: red;
+}
+.title2{
+    border-bottom: 1px solid #989993 ;
+    width: 97%;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: 'Courier New', Courier;
+    color: rgb(95, 92, 92);
+    margin-right: 19px;
+}
+.user-data-list {
+    /* position: absolute; */
+    /* left: 38%; */    /* right:10%;     */
+    /* border: 1px solid pink;  */
+
+
+    width: max-content;	
+  
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* transform: translateY(50%); */
+    background: white;
+    z-index: 500;
+    border-radius: var(--brd-radius);
+  }
+  .user-data-list2 {
+    /* position: absolute; */
+    /* left: 43%;
+    bottom: 51%; */
+   
+    width: max-content;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* transform: translateY(50%); */
+    background: white;
+    z-index: 500;
+    border-radius: var(--brd-radius);
+  }
+  .user-data-item {
+      flex: 0 1 25%;
+    padding: 2% 2vw;
+    position: relative;
+  }
+  .user-data-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 90%;
+    background: rgb(131, 129, 129);
+    position: absolute;
+    right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+  }
+  .user-data-item .data-term {
+      font-size: .9rem;
+      color: #187883;
+      font-weight: 500;
+      text-transform: uppercase;
+      white-space: nowrap;
+      margin-bottom: 7px;
+  }
+  .user-data-item  .input::placeholder {
+      color: var(--Dark-Gray);
+  }
+  .user-data-item .data-value {
+      margin-left: 0;
+      margin-top: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--Grayish-Black);
+  }
+.user-data-item .p {
+    color: gray;
+    font-size: small;
+    font-weight: 100;
+    margin-top: 0px;
+}
+.user-data-item .h{
+    font-size: medium;
+    color: rgb(75, 73, 73);
+    font-weight: 600;
+    margin-top: 2px;
+}
+.user-data-item {
+    margin-bottom: 13px;
+}
+#country{
+    font-size: medium;
+    color: rgb(75, 73, 73);
+    font-weight: 600;
+    margin-top: 12px;
+}  
+#faq-container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    
+    margin-right: 14px;
+    
+}
+
+/* Card lola */
+
+.cards {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .cards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .cards__items {
+    margin-bottom: 24px;
+  }
+  
+  .cards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+  .cards__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cards__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .cards__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #11283a;
+    box-sizing: border-box;
+  }
+  
+  .cards__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .cards__item__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards__item__info {
+    padding: 20px 30px 30px;
+  }
+  
+  .cards__item__text {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cards__item {
+      margin-bottom: 2rem;
+    }
+  }
+  
